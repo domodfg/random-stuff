@@ -1,38 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .App {
   text-align: center;
+  background-color: rgb(31, 31, 31);
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.anime {
+  width: 33.3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.animeGirls {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-height: 550vw;
+  margin-top: 50px;
+}
+
+.cat {
+  width: 100%;
+  top: 0%;
+  position: fixed;
+  height: 50px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(248, 176, 89);
 }
 
-.App-link {
-  color: #61dafb;
+.fact {
+  padding: 0px 5%;
+  width: 60%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 700px) {
+  .cat {
+    height: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  .animeGirls {
+    margin-top: 100px;
   }
 }
